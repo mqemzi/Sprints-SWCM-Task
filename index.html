@@ -3,61 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog Homepage</title>
+    <title>My Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>My Blog</h1>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog Posts</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="blog-post">
-            <h2>Latest Post: Getting Started with Web Development</h2>
-            <p class="post-description">Learn the basics of HTML, CSS, and JavaScript to kickstart your web development journey.</p>
+
+    <main class="content-wrapper">
+        <section class="blog-list">
+            <h2>Latest Posts</h2>
+            <article class="blog-preview">
+                <h3>Getting Started with Web Development</h3>
+                <p>Learn the basics of HTML, CSS, and JavaScript to kickstart your web development journey.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="blog-preview">
+                <h3>CSS Flexbox Mastery</h3>
+                <p>Master the art of flexible layouts with CSS Flexbox and create responsive designs.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="blog-preview">
+                <h3>Modern Typography Tips</h3>
+                <p>Discover best practices for web typography and enhance your website's readability.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
         </section>
 
-        <section class="blog-post">
-            <h2>Understanding CSS Layouts</h2>
-            <p class="post-description">A comprehensive guide to CSS layouts and positioning techniques.</p>
-        </section>
-
-        <section class="blog-post">
-            <h2>Responsive Design Principles</h2>
-            <p class="post-description">Essential principles for creating responsive and mobile-friendly websites.</p>
+        <section class="blog-detail">
+            <article class="full-post">
+                <h2>Getting Started with Web Development</h2>
+                <div class="post-meta">
+                    <span>Published: December 19, 2024</span>
+                    <span>By: John Doe</span>
+                </div>
+                <div class="post-content">
+                    <p>Web development is an exciting journey that begins with understanding the core technologies that power the modern web. In this comprehensive guide, we'll explore the fundamental building blocks that every aspiring web developer should know.</p>
+                    <p>We'll cover everything from setting up your development environment to writing your first lines of code. By the end of this article, you'll have a solid foundation to build upon.</p>
+                    <h3>Key Topics Covered:</h3>
+                    <ul>
+                        <li>HTML structure and semantics</li>
+                        <li>CSS styling and layouts</li>
+                        <li>JavaScript basics and DOM manipulation</li>
+                        <li>Development tools and resources</li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
-    <!-- Blog Posts Section -->
-    <section id="blog-posts">
-        <article class="post">
-            <h2><a href="post1.html">How to Start Coding: A Beginner's Guide</a></h2>
-            <p>This post is a great introduction to coding for absolute beginners. Learn what tools and languages you need to get started!</p>
-            <time datetime="2024-12-15">December 15, 2024</time>
-        </article>
 
-        <article class="post">
-            <h2><a href="post2.html">Web Development Best Practices</a></h2>
-            <p>Explore the best practices every web developer should follow to build clean, maintainable, and scalable websites.</p>
-            <time datetime="2024-12-14">December 14, 2024</time>
-        </article>
-
-        <article class="post">
-            <h2><a href="post3.html">Understanding JavaScript Frameworks</a></h2>
-            <p>This post dives into the most popular JavaScript frameworks and how to choose the right one for your project.</p>
-            <time datetime="2024-12-13">December 13, 2024</time>
-        </article>
-    </section>
-    
-
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
 </body>
 </html>
