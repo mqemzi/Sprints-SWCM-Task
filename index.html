@@ -3,68 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Blog Homepage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog-posts.html">Blog Posts</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="content-wrapper">
-        <section class="blog-list">
-            <h2>Latest Posts</h2>
-            <article class="blog-preview">
-                <h3>Getting Started with Web Development</h3>
-                <p>Learn the basics of HTML, CSS, and JavaScript to kickstart your web development journey.</p>
-                <a href="#" class="read-more">Read More</a>
+    <!-- Blog Posts Section -->
+    <main>
+        <section>
+            <article>
+                <h2><a href="post1.html">Post Title 1</a></h2>
+                <p>A short description of the first blog post.</p>
+                <time datetime="2024-12-20">December 20, 2024</time>
             </article>
-            <article class="blog-preview">
-                <h3>CSS Flexbox Mastery</h3>
-                <p>Master the art of flexible layouts with CSS Flexbox and create responsive designs.</p>
-                <a href="#" class="read-more">Read More</a>
+            <article>
+                <h2><a href="post2.html">Post Title 2</a></h2>
+                <p>A short description of the second blog post.</p>
+                <time datetime="2024-12-21">December 21, 2024</time>
             </article>
-            <article class="blog-preview">
-                <h3>Modern Typography Tips</h3>
-                <p>Discover best practices for web typography and enhance your website's readability.</p>
-                <a href="#" class="read-more">Read More</a>
-            </article>
-        </section>
-
-        <section class="blog-detail">
-            <article class="full-post">
-                <h2>Getting Started with Web Development</h2>
-                <div class="post-meta">
-                    <span>Published: December 19, 2024</span>
-                    <span>By: John Doe</span>
-                </div>
-                <div class="post-content">
-                    <p>Web development is an exciting journey that begins with understanding the core technologies that power the modern web. In this comprehensive guide, we'll explore the fundamental building blocks that every aspiring web developer should know.</p>
-                    <p>We'll cover everything from setting up your development environment to writing your first lines of code. By the end of this article, you'll have a solid foundation to build upon.</p>
-                    <h3>Key Topics Covered:</h3>
-                    <ul>
-                        <li>HTML structure and semantics</li>
-                        <li>CSS styling and layouts</li>
-                        <li>JavaScript basics and DOM manipulation</li>
-                        <li>Development tools and resources</li>
-                    </ul>
-                </div>
-            </article>
+            <!-- Add more articles as needed -->
         </section>
     </main>
 
+    <!-- Footer (Optional) -->
     <footer>
-        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
