@@ -1,100 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Layout</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog Posts</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation Menu -->
+  <nav class="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="main-container">
-        <!-- Blog List -->
-        <div class="blog-list">
-            <h2>Blog List</h2>
-            <ul>
-                <li><a href="#post1">Post Title 1</a></li>
-                <li><a href="#post2">Post Title 2</a></li>
-                <li><a href="#post3">Post Title 3</a></li>
-            </ul>
-        </div>
-
-        <!-- Blog Posts -->
-        <div class="posts">
-            <article id="post1" class="post">
-                <h2 class="post-title">Post Title 1</h2>
-                <div class="post-meta">
-                    By Mehaina Al Qemzi<br>
-                    December 7, 2024
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo">
-                <div class="key-points">
-                    <h3>Key Points:</h3>
-                    <ul>
-                        <li>Introduction to the topic</li>
-                        <li>Main discussion</li>
-                        <li>Conclusion</li>
-                    </ul>
-                </div>
-                <p>For more details, <a href="#" class="read-more">click here</a></p>
-            </article>
-
-            <article id="post2" class="post">
-                <h2 class="post-title">Post Title 2</h2>
-                <div class="post-meta">
-                    By Mehaina Al Qemzi<br>
-                    November 15, 2024
-                </div>
-                <p>Sed cursus ante dapibus diam. Set amet nisl quis ante dignissim dignissim.</p>
-                <img src="person-working.jpg" alt="Person working at computer">
-                <div class="key-points">
-                    <h3>Important Topics:</h3>
-                    <ol>
-                        <li>Analysis</li>
-                        <li>Progress</li>
-                        <li>Future Discussion</li>
-                    </ol>
-                </div>
-                <p>Related topic in <a href="#" class="read-more">this resource</a></p>
-            </article>
-
-            <article id="post3" class="post">
-                <h2 class="post-title">Post Title 3</h2>
-                <div class="post-meta">
-                    By Mehaina Al Qemzi<br>
-                    November 15, 2024
-                </div>
-                <p>These topics suggest that in literature. Each affects on our target behavioral insights.</p>
-                <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo">
-                <div class="takeaways">
-                    <h3>Takeaways:</h3>
-                    <ul>
-                        <li>Lesson 1</li>
-                        <li>Lesson 2</li>
-                        <li>Lesson 3</li>
-                    </ul>
-                </div>
-                <p>Learn more at <a href="#" class="read-more">this link</a></p>
-            </article>
-        </div>
+  <!-- Blog Section -->
+  <div class="blog-container">
+    <!-- Blog Post List -->
+    <div class="blog-list">
+      <h2>Blog Posts</h2>
+      <ul>
+        <li><a href="#post1">Post 1</a></li>
+        <li><a href="#post2">Post 2</a></li>
+        <li><a href="#post3">Post 3</a></li>
+      </ul>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <p>Copyright 2024</p>
-    </footer>
+    <!-- Detailed Blog Content -->
+    <div class="blog-content">
+      <h2 id="post1">Post Title</h2>
+      <!-- Linked Photo -->
+      <a href="large-photo.jpg" target="_blank">
+        <img src="small-photo.jpg" alt="Description of the photo" class="blog-photo">
+      </a>
+      <p>Detailed content of the selected blog post...</p>
+    </div>
+  </div>
 </body>
 </html>
