@@ -18,16 +18,23 @@ body {
 
 /* Header Navigation */
 .top-nav {
-    background-color: #333;
-    padding: 10px 0;
+    background-color: #0066cc;
+    padding: 15px 0;
     margin-bottom: 20px;
+}
+
+.top-nav h1 {
+    color: white;
+    margin-left: 20px;
+    float: left;
 }
 
 .top-nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
+    padding-right: 20px;
 }
 
 .top-nav a {
@@ -38,68 +45,97 @@ body {
 
 /* Blog List */
 .blog-list {
-    background-color: #eee;
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .blog-list h2 {
-    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .blog-list ul {
     list-style: none;
-    margin-left: 20px;
 }
 
 .blog-list a {
-    color: blue;
+    color: #0066cc;
     text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-list a:hover {
+    background-color: #f8f9fa;
 }
 
 /* Blog Posts */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
+}
+
 .post {
     background-color: white;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
 }
 
 .post-title {
-    font-size: 24px;
+    color: #0066cc;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .post-meta {
     color: #666;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 
 .post-content {
-    margin-bottom: 20px;
+    color: #333;
 }
 
 .post img {
-    max-width: 200px;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 20px 0;
+    border-radius: 4px;
 }
 
 /* Lists in Posts */
-.key-points {
-    margin: 15px 0;
-    margin-left: 20px;
+.key-points, .takeaways {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
 }
 
-.takeaways {
-    margin: 15px 0;
+.key-points h3, .takeaways h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.key-points ul, .key-points ol, .takeaways ul {
     margin-left: 20px;
+    color: #444;
 }
 
 /* Links */
 .read-more {
-    color: blue;
+    color: #0066cc;
     text-decoration: none;
 }
 
@@ -107,25 +143,75 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .main-container {
+/* Footer */
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .top-nav ul {
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .top-nav h1 {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Blog Posts */
+    .posts {
         flex-direction: column;
     }
 
-    .blog-list, .blog-posts {
-        width: 100%;
+    .post {
+        flex: 1 1 100%;
+        margin: 10px 0;
     }
 
-    h1 {
-        font-size: 2rem;
+    /* Typography */
+    .post-title {
+        font-size: 1.3em;
     }
 
-    h2 {
-        font-size: 1.5rem;
+    body {
+        font-size: 16px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
+    /* Spacing */
+    .post {
+        padding: 15px;
+    }
+
+    .blog-list {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for mobile */
+    .top-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .post {
+        padding: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .blog-list h2 {
+        font-size: 1.2em;
     }
 }
