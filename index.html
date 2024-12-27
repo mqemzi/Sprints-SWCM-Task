@@ -7,57 +7,84 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My Blog</h1>
-    
-    <!-- Navigation -->
-    <nav>
+    <nav class="top-nav">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Blog Posts</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <div class="main-container">
         <!-- Blog List -->
-        <section class="blog-list">
+        <div class="blog-list">
             <h2>Blog List</h2>
             <ul>
-                <li><a href="#post1">Post One</a></li>
-                <li><a href="#post2">Post Two</a></li>
-                <li><a href="#post3">Post Three</a></li>
+                <li><a href="#post1">Post Title 1</a></li>
+                <li><a href="#post2">Post Title 2</a></li>
+                <li><a href="#post3">Post Title 3</a></li>
             </ul>
-        </section>
+        </div>
 
         <!-- Blog Posts -->
-        <section class="blog-posts">
-            <!-- Post 1 -->
-            <article id="post1">
-                <h2>Post One</h2>
-                <p>By: Mehaina Al Qemzi</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore et.</p>
-                <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo" width="200">
-                <p>For more about <a href="#">click here</a></p>
+        <div class="posts">
+            <article id="post1" class="post">
+                <h2 class="post-title">Post Title 1</h2>
+                <div class="post-meta">
+                    By Mehaina Al Qemzi<br>
+                    December 7, 2024
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo">
+                <div class="key-points">
+                    <h3>Key Points:</h3>
+                    <ul>
+                        <li>Introduction to the topic</li>
+                        <li>Main discussion</li>
+                        <li>Conclusion</li>
+                    </ul>
+                </div>
+                <p>For more details, <a href="#" class="read-more">click here</a></p>
             </article>
 
-            <!-- Post 2 -->
-            <article id="post2">
-                <h2>Post Two</h2>
-                <p>By: Mehaina Al Qemzi</p>
-                <p>My second post explores topics about design. Check out some great resources included!</p>
-                <img src="https://picsum.photos/800/400?2" alt="Person working at computer" width="800">
-                <p>Read more about <a href="#">design resources</a></p>
+            <article id="post2" class="post">
+                <h2 class="post-title">Post Title 2</h2>
+                <div class="post-meta">
+                    By Mehaina Al Qemzi<br>
+                    November 15, 2024
+                </div>
+                <p>Sed cursus ante dapibus diam. Set amet nisl quis ante dignissim dignissim.</p>
+                <img src="person-working.jpg" alt="Person working at computer">
+                <div class="key-points">
+                    <h3>Important Topics:</h3>
+                    <ol>
+                        <li>Analysis</li>
+                        <li>Progress</li>
+                        <li>Future Discussion</li>
+                    </ol>
+                </div>
+                <p>Related topic in <a href="#" class="read-more">this resource</a></p>
             </article>
 
-            <!-- Post 3 -->
-            <article id="post3">
-                <h2>Post Three</h2>
-                <p>By: Mehaina Al Qemzi</p>
-                <p>These topics explore the latest trends. Find out more about detailed topics.</p>
-                <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo" width="200">
-                <p>Learn more about <a href="#">latest trends</a></p>
+            <article id="post3" class="post">
+                <h2 class="post-title">Post Title 3</h2>
+                <div class="post-meta">
+                    By Mehaina Al Qemzi<br>
+                    November 15, 2024
+                </div>
+                <p>These topics suggest that in literature. Each affects on our target behavioral insights.</p>
+                <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo">
+                <div class="takeaways">
+                    <h3>Takeaways:</h3>
+                    <ul>
+                        <li>Lesson 1</li>
+                        <li>Lesson 2</li>
+                        <li>Lesson 3</li>
+                    </ul>
+                </div>
+                <p>Learn more at <a href="#" class="read-more">this link</a></p>
             </article>
-        </section>
+        </div>
     </div>
 
     <!-- Footer -->
