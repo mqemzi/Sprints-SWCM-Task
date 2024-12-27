@@ -7,98 +7,106 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My Blog</h1>
-    
-    <!-- Navigation -->
-    <nav>
+    <nav class="top-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Blog Posts</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="main-container">
-        <!-- Blog List -->
-        <section class="blog-list">
-            <h2>Blog List</h2>
-            <ul>
-                <li><a href="#post1">My Journey in Web Development</a></li>
-                <li><a href="#post2">Design Principles for Beginners</a></li>
-                <li><a href="#post3">Future of Technology</a></li>
-            </ul>
-        </section>
+    <div class="blog-list">
+        <h2>Blog List</h2>
+        <ul>
+            <li><a href="#post1">My Journey in Web Development</a></li>
+            <li><a href="#post2">Design Principles for Beginners</a></li>
+            <li><a href="#post3">Future of Technology</a></li>
+        </ul>
+    </div>
 
-        <!-- Blog Posts -->
-        <section class="blog-posts">
-            <!-- Post 1 -->
-            <article id="post1">
-                <h2>My Journey in Web Development</h2>
-                <p>By: Mehaina Al Qemzi</p>
-                <p>Starting my journey in web development has been an exciting adventure. 
-                    Here are the key skills I've learned so far:</p>
+    <div class="posts">
+        <article id="post1" class="post">
+            <h2 class="post-title">My Journey in Web Development</h2>
+            <div class="post-meta">
+                By Mehaina Al Qemzi<br>
+                December 7, 2024
+            </div>
+            <p>Starting my journey in web development has been an exciting adventure. 
+                Here are the key skills I've learned so far:</p>
+            <img 
+                src="https://picsum.photos/800/400?1"
+                alt="A desktop workspace with a computer showing code editor and web development tools"
+                width="800"
+            >
+            <div class="key-points">
+                <h3>Key Points:</h3>
                 <ul>
                     <li>HTML5 and Semantic Markup</li>
                     <li>CSS3 and Modern Layouts</li>
                     <li>JavaScript Fundamentals</li>
                     <li>Responsive Design Principles</li>
                 </ul>
-                <img 
-                    src="https://picsum.photos/800/400?1"
-                    alt="A desktop workspace with a computer showing code editor and web development tools"
-                    width="800"
-                >
-                <p>
-                    Learn more about web development on 
-                    <a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a>.
-                </p>
-            </article>
+            </div>
+            <p>
+                Learn more about web development on 
+                <a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a>.
+            </p>
+        </article>
 
-            <!-- Post 2 -->
-            <article id="post2">
-                <h2>Design Principles for Beginners</h2>
-                <p>By: Mehaina Al Qemzi</p>
-                <p>Understanding design principles is crucial for creating effective websites.
-                    Here are the fundamental principles every designer should know:</p>
+        <article id="post2" class="post">
+            <h2 class="post-title">Design Principles for Beginners</h2>
+            <div class="post-meta">
+                By Mehaina Al Qemzi<br>
+                November 15, 2024
+            </div>
+            <p>Understanding design principles is crucial for creating effective websites.
+                Here are the fundamental principles every designer should know:</p>
+            <img 
+                src="https://picsum.photos/800/400?2"
+                alt="Collection of design elements showing color theory, typography, and layout principles"
+                width="800"
+            >
+            <div class="key-points">
+                <h3>Important Topics:</h3>
                 <ol>
                     <li>Balance and Harmony</li>
                     <li>Contrast and Hierarchy</li>
                     <li>Repetition and Pattern</li>
                     <li>White Space Usage</li>
                 </ol>
-                <img 
-                    src="https://picsum.photos/800/400?2"
-                    alt="Collection of design elements showing color theory, typography, and layout principles"
-                    width="800"
-                >
-                <p>
-                    Explore more design resources on 
-                    <a href="https://www.figma.com/resources" target="_blank" rel="noopener">Figma Resources</a>.
-                </p>
-            </article>
+            </div>
+            <p>
+                Explore more design resources on 
+                <a href="https://www.figma.com/resources" target="_blank" rel="noopener">Figma Resources</a>.
+            </p>
+        </article>
 
-            <!-- Post 3 -->
-            <article id="post3">
-                <h2>Future of Technology</h2>
-                <p>By: Mehaina Al Qemzi</p>
-                <p>The technology landscape is constantly evolving. Here are the trending topics:</p>
+        <article id="post3" class="post">
+            <h2 class="post-title">Future of Technology</h2>
+            <div class="post-meta">
+                By Mehaina Al Qemzi<br>
+                November 15, 2024
+            </div>
+            <p>The technology landscape is constantly evolving. Here are the trending topics:</p>
+            <img 
+                src="https://picsum.photos/800/400?3"
+                alt="Futuristic technology concept showing AI, VR, and emerging tech innovations"
+                width="800"
+            >
+            <div class="takeaways">
+                <h3>Takeaways:</h3>
                 <ul>
                     <li>Artificial Intelligence</li>
                     <li>Virtual Reality</li>
                     <li>Blockchain Technology</li>
                     <li>Internet of Things</li>
                 </ul>
-                <img 
-                    src="https://picsum.photos/800/400?3"
-                    alt="Futuristic technology concept showing AI, VR, and emerging tech innovations"
-                    width="800"
-                >
-                <p>
-                    Stay updated with tech news on 
-                    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a>.
-                </p>
-            </article>
-        </section>
+            </div>
+            <p>
+                Stay updated with tech news on 
+                <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a>.
+            </p>
+        </article>
     </div>
 
     <!-- Footer -->
