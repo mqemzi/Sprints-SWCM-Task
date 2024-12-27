@@ -3,24 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post - Getting Started with Web Development</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mehaina's Blog - Detailed Posts</title>
 </head>
 <body>
-    <header>
-        <h1>Getting Started with Web Development</h1>
-    </header>
-    
+    <!-- Blog List Section -->
+    <nav id="blog-list">
+        <h2>Latest Posts</h2>
+        <ul>
+            <li><a href="#post1">My Journey in Web Development</a></li>
+            <li><a href="#post2">Design Principles for Beginners</a></li>
+            <li><a href="#post3">Future of Technology</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Posts Section -->
     <main>
-        <article class="blog-post">
-            <p class="post-description">Web development is an exciting field that combines creativity with technical skills. In this post, we'll explore the fundamental concepts you need to know to begin your journey.</p>
+        <!-- First Blog Post -->
+        <article id="post1">
+            <a name="web-dev-journey"></a>
+            <h1>My Journey in Web Development</h1>
             
-            <h2>The Basics</h2>
-            <p>Every web developer should start with understanding HTML, CSS, and JavaScript. These three technologies form the foundation of modern web development.</p>
+            <address>
+                Written by <a href="#author-profile" rel="author">Mehaina Al Qemzi</a>
+                <time datetime="2024-12-27T12:20:28+04:00">December 27, 2024</time>
+            </address>
+
+            <img 
+                src="https://picsum.photos/800/400?1"
+                alt="A desktop workspace with a computer showing code editor and web development tools"
+                width="800"
+                height="400"
+            >
+
+            <p>
+                Starting my journey in web development has been an exciting adventure. 
+                Here are the key skills I've learned so far:
+            </p>
+
+            <ul>
+                <li>HTML5 and Semantic Markup</li>
+                <li>CSS3 and Modern Layouts</li>
+                <li>JavaScript Fundamentals</li>
+                <li>Responsive Design Principles</li>
+            </ul>
+
+            <p>
+                Learn more about web development on 
+                <a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a>.
+            </p>
+        </article>
+
+        <!-- Second Blog Post -->
+        <article id="post2">
+            <a name="design-principles"></a>
+            <h1>Design Principles for Beginners</h1>
             
-            <h2>Next Steps</h2>
-            <p>After mastering the basics, you can explore frameworks, backend development, and more advanced concepts.</p>
+            <address>
+                Written by <a href="#author-profile" rel="author">Mehaina Al Qemzi</a>
+                <time datetime="2024-12-27T11:30:00+04:00">December 27, 2024</time>
+            </address>
+
+            <img 
+                src="https://picsum.photos/800/400?2"
+                alt="Collection of design elements showing color theory, typography, and layout principles"
+                width="800"
+                height="400"
+            >
+
+            <p>
+                Understanding design principles is crucial for creating effective websites.
+                Here are the fundamental principles every designer should know:
+            </p>
+
+            <ol>
+                <li>Balance and Harmony</li>
+                <li>Contrast and Hierarchy</li>
+                <li>Repetition and Pattern</li>
+                <li>White Space Usage</li>
+            </ol>
+
+            <p>
+                Explore more design resources on 
+                <a href="https://www.figma.com/resources" target="_blank" rel="noopener">Figma Resources</a>.
+            </p>
+        </article>
+
+        <!-- Third Blog Post -->
+        <article id="post3">
+            <a name="future-tech"></a>
+            <h1>Future of Technology</h1>
+            
+            <address>
+                Written by <a href="#author-profile" rel="author">Mehaina Al Qemzi</a>
+                <time datetime="2024-12-27T10:00:00+04:00">December 27, 2024</time>
+            </address>
+
+            <img 
+                src="https://picsum.photos/800/400?3"
+                alt="Futuristic technology concept showing AI, VR, and emerging tech innovations"
+                width="800"
+                height="400"
+            >
+
+            <p>
+                The technology landscape is constantly evolving. Here are the trending topics:
+            </p>
+
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>Virtual Reality</li>
+                <li>Blockchain Technology</li>
+                <li>Internet of Things</li>
+            </ul>
+
+            <p>
+                Stay updated with tech news on 
+                <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a>.
+            </p>
         </article>
     </main>
+
+    <footer>
+        <a href="#blog-list">Back to Top</a>
+    </footer>
 </body>
 </html>
