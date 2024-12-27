@@ -3,42 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Homepage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>My Blog</title>
 </head>
 <body>
-    <!-- Header and Navigation -->
-    <header>
-        <h1>My Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog-posts.html">Blog Posts</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>My Blog</h1>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Blog Posts Section -->
-    <main>
-        <section>
-            <article>
-                <h2><a href="post1.html">Post Title 1</a></h2>
-                <p>A short description of the first blog post.</p>
-                <time datetime="2024-12-20">December 20, 2024</time>
-            </article>
-            <article>
-                <h2><a href="post2.html">Post Title 2</a></h2>
-                <p>A short description of the second blog post.</p>
-                <time datetime="2024-12-21">December 21, 2024</time>
-            </article>
-            <!-- Add more articles as needed -->
-        </section>
-    </main>
+    <!-- Blog List -->
+    <section>
+        <h2>Blog List</h2>
+        <ul>
+            <li><a href="#post1">Post One</a></li>
+            <li><a href="#post2">Post Two</a></li>
+            <li><a href="#post3">Post Three</a></li>
+        </ul>
+    </section>
 
-    <!-- Footer (Optional) -->
+    <!-- Blog Posts -->
+    <section>
+        <!-- Post 1 -->
+        <article id="post1">
+            <h2>Post One</h2>
+            <p>By: Mehaina Al Qemzi</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore et.</p>
+            <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo" width="200">
+            <p>For more about <a href="#">click here</a></p>
+        </article>
+
+        <!-- Post 2 -->
+        <article id="post2">
+            <h2>Post Two</h2>
+            <p>By: Mehaina Al Qemzi</p>
+            <p>My second post explores topics about design. Check out some great resources included!</p>
+            <img src="https://picsum.photos/800/400?2" alt="Person working at computer" width="800">
+            <p>Read more about <a href="#">design resources</a></p>
+        </article>
+
+        <!-- Post 3 -->
+        <article id="post3">
+            <h2>Post Three</h2>
+            <p>By: Mehaina Al Qemzi</p>
+            <p>These topics explore the latest trends. Find out more about detailed topics.</p>
+            <img src="https://raw.githubusercontent.com/sprints/logo.png" alt="Sprints Logo" width="200">
+            <p>Learn more about <a href="#">latest trends</a></p>
+        </article>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>Copyright 2024</p>
     </footer>
 </body>
 </html>
